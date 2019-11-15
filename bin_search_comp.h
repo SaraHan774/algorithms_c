@@ -7,7 +7,6 @@
 
 #include <limits.h>
 #include <stdio.h>
-#include <stdlib.h>
 
 //compare function for binary search
 int bin_compare(const void * first, const void * second){
