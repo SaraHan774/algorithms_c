@@ -11,6 +11,7 @@
 
 extern int top;
 
+//TODO deallocate array where ?
 int init_stack(const int * arr){
     arr = malloc(sizeof(int) * MAX_ARR_SIZE);
 

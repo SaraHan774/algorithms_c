@@ -3,5 +3,5 @@ project(algorithms_c C)
 
 set(CMAKE_C_STANDARD 99)
 
-#add_executable(algorithms_c main.c bin_search.h search_sen.h)
-add_executable(algorithms_c m_stack.c stack.h)
+add_executable(algorithms_c main.c bin_search.h search_sen.h)
+add_executable(stack m_stack.c stack.h)
