@@ -7,7 +7,7 @@
 
 int bin_search(const int a[], int n, int key){
     int pl = 0;
-    int pr = n -1;
+    int pr = n - 1;
     int pc;
 
     do{
