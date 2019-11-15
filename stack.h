@@ -11,7 +11,6 @@
 
 extern int top;
 
-//TODO deallocate array where ?
 int init_stack(const int * arr){
     arr = malloc(sizeof(int) * MAX_ARR_SIZE);
 
@@ -20,14 +19,6 @@ int init_stack(const int * arr){
         return -1;
     }
     return 0;
-}
-
-
-/*
- * return true if top is at -1, otherwise return 0
- */
-int is_stack_empty(const int * top){
-    return *top == -1 ? 1 : 0;
 }
 
 
@@ -58,6 +49,7 @@ int pop(int * arr, int * result){
     top--;
     return 0;
 }
+
 
 void print_stack(int * arr){
     for(int i = 0; i <= top; i++){

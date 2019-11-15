@@ -29,6 +29,8 @@ int main(){
     peek(arr, &result);
     printf("Peek result : %d \n", result);
 
+    free(arr); 
+    
     return 0;
 }
 
