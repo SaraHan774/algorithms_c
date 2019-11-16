@@ -10,18 +10,18 @@ int search(int a[], int n, int key){
     int i = 0;
     a[n] = key; //key 값을 배열의 끝에다가 추가한다.
 
-    for(i; i <= n; i++){
-        if(i == n){
-            puts("search() : search failed \n");
-            return -1;
-        }
-        else if(a[i] == key){
+    for(i; i < n; i++){
+        printf("a[%d] : %d   ", i, a[i]);
+        if(a[i] == key){
             printf("search() : Found key %d", a[i]);
-            return i;
+            return a[i];
         }
     }
 
-    return -1;
+    if(i == n){
+        puts("search() : search failed \n");
+        return -1;
+    }
 }
 
 #endif //ALGORITHMS_C_SEARCH_SEN_H

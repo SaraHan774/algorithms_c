@@ -37,7 +37,7 @@ int main() {
     }
 
 
-    search(x, 5, 10);
+    search(x, 5, 3);
 
     return 0;
 }

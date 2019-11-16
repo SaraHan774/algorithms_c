@@ -17,7 +17,7 @@ int bin_compare(const void * first, const void * second){
 void *bin_search(const void *key, const void *base, size_t nmemb, size_t size, int(*bin_compare)(const void *, const void *)){
     //key : element to search for
     //base : array to sort
-    //nmemb : number of elements ?
+    //nmemb : number of elements
     //size : size of one element
 
     //Case 1 : 배열이 비어있어서 search 를 진행할 필요가 없는 경우
