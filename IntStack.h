@@ -21,5 +21,7 @@ int IsEmpty(const IntStack *s);
 int IsFull(const IntStack *s);
 int Search(const IntStack *s, int item);
 void Print(const IntStack *s);
+int Capacity(const IntStack *s); 
+void Terminate(IntStack *s);
 
 #endif //ALGORITHMS_C_INTSTACK_H
