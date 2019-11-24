@@ -26,4 +26,7 @@ int Search(const IntQueue *q, int x);
 void Print(const IntQueue *q);
 void Terminate(IntQueue *q);
 
+//160 페이지 연습문제 4번
+int Search2(const IntQueue *q, int x);
+
 #endif //ALGORITHMS_C_INTQUEUE_H

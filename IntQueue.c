@@ -19,7 +19,8 @@ int Initialize(IntQueue *q, int max){
 
 
 int Enque(IntQueue *q, int x){
-    if(q->num >= q->max){
+    //isFull 함수를 이용해 가득 찬 것을 확인한다.
+    if(isFull(q)){
         //만약 큐가 가득 찬 상태라면
         return -1;
     }
@@ -37,7 +38,7 @@ int Enque(IntQueue *q, int x){
 
 
 int Deque(IntQueue *q, int *x){
-    if(q->num <= 0){
+    if(isEmpty(q)){
         //만약 삭제할 요소가 없다면 -1을 반환
         return -1;
     }
@@ -53,7 +54,7 @@ int Deque(IntQueue *q, int *x){
 
 
 int Peek(const IntQueue *q, int *x){
-    if(q->num <= 0){
+    if(isEmpty(q)){
         //만약 큐가 비어있다면 return -1
         return -1;
     }
@@ -104,6 +105,11 @@ int Search(const IntQueue *q, int x){
 
 void Print(const IntQueue *q){
     int i;
+
+    //isEmpty 함수를 이용해 비어있을 경우 출력 메시지를 다르게 한다.
+    if(isEmpty(q)){
+        printf("Queue is Empty !\n");
+    }
     for(i = 0; i < q->num; i++){
         printf("%d ", q->que[(i+q->front)%q->max]);
     }
@@ -117,4 +123,22 @@ void Terminate(IntQueue *q){
     }
     //메모리 공간에 할당한 배열을 해제한다.
     q->max = q->num = q->front = q->rear = 0;
+}
+
+
+/* 160 페이지 연습문제 4번
+* 탐색된 요소의 인덱스를 반환하는 것이 아니라,
+* 탑색된 데이터가 맨 앞의 요소로부터 상대적으로 몇 번째 위치에 있는지에 대한 인덱스 값을 반환.
+* 실패시 -1 반환
+*/
+int Search2(const IntQueue *q ,int x){
+    //TODO : Search2 함수 구현하기 ! 
+
+    int searchIdx = Search(q, x);
+    if(searchIdx == -1){
+        printf("Search failed ... \n");
+        return -1;
+    }
+
+    return (q -> front) - searchIdx;
 }

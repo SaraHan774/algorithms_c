@@ -15,11 +15,13 @@ int main(void){
     }
 
     while(true){
-        int m, x;
+        int m, x, search_result;
 
         printf("Current num of data : %d / %d \n", Size(&que), Capacity(&que));
-        printf("(1) enque (2)deque (3)peek (4)print (0)terminate : ");
+        //Search2 및 다른 함수를 사용하는 manual 추가
+        printf("(1) enque (2)deque (3)peek (4)print (5)search2 (6)Clear (0)terminate : ");
         scanf("%d", &m);
+
 
         if(m == 0){
             break;
@@ -48,6 +50,17 @@ int main(void){
                 }
                 break;
             case 4:
+                Print(&que);
+                break;
+            case 5:
+                printf("\nenter number to search : ");
+                scanf("%d", &x);
+                search_result = Search2(&que, x);
+                printf("search result : %d \n", search_result);
+                break;
+            case 6:
+                Clear(&que);
+                printf("\ncleared queue ... result : ");
                 Print(&que);
                 break;
         }
