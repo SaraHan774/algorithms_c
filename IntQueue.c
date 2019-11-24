@@ -132,7 +132,7 @@ void Terminate(IntQueue *q){
 * 실패시 -1 반환
 */
 int Search2(const IntQueue *q ,int x){
-    //TODO : Search2 함수 구현하기 ! 
+    //TODO : Search2 함수 구현하기 !
 
     int searchIdx = Search(q, x);
     if(searchIdx == -1){
