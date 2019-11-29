@@ -33,34 +33,33 @@ int gcd(int x, int y){
         return 0;
     }
 
+    if(x == y){
+    //Case 1 : if equal, return either x or y
+        return x;
+    }
+
     if(x < y) {
-    //Case 1 : make x > y
+    //Case 2 : make x > y
         tmp = x;
         x = y;
         y = tmp;
     }
+ //Case 3 : x > y
+    int k = x % y;
+    if(k == 0){
+        return y;
+    }
+    while(k > 0){
+        x = k;
+        y = y % k;
+        printf("\nx : %d, y : %d k : %d\n", x, y, k);
+        if(y == 0){
+            puts("k == 0");
+            return x;
+        }
+        k = x % y;
+    }
 
-    if(x == y){
-        //Case 2 : if equal, return either x or y
-        return x;
-    }
-        //Case 3 : x > y
-    else{
-        int k = x % y;
-        if(k == 0){
-            return y;
-        }
-        while(k > 0){
-            x = k;
-            y = y % k;
-            printf("\nx : %d, y : %d k : %d\n", x, y, k);
-            if(y == 0){
-                puts("k == 0");
-                return x;
-            }
-            k = x % y;
-        }
-    }
     return 1;
 }
 
