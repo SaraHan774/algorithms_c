@@ -47,7 +47,7 @@ int gcd(int x, int y){
         while(k > 0){
             x = k;
             y = y % k;
-            printf("x : %d, y : %d k : %d\n", x, y, k);
+            printf("\nx : %d, y : %d k : %d\n", x, y, k);
             if(y == 0){
                 puts("k == 0");
                 return x;
@@ -71,18 +71,37 @@ int gcd2(int x, int y){
 //170페이지 연습문제 3번
 //배열 a의 모든 요소의 최대공약수 구하기
 int gcd_array(const int a[], int n){
+
     if(n < 2){
         printf("Array should have more than 2 elements.\n");
         return -1;
     }
 
-    int i = 0;
-    int k;
-    while(i < n - 1){
-        k = gcd(a[i], a[i+1]);
-        i++;
+    int comb = n*(n-1)/2; //N combination 2
+    int sub[comb];
+    int subIndex = 0;
+
+    for(int i = 0; i < n; i++){
+        for(int j = i+1; j < n; j++){
+            sub[subIndex++] = gcd(a[i], a[j]);
+            //a[0] a[1]
+            //a[0] a[2]
+            //a[1] a[2]
+            //find all possible combinations of GCD
+        }
     }
-    return k;
+
+    int min = sub[0];
+    printf("\aindex 0 : %d \n", sub[0]);
+
+    for(int m = 1; m < comb; m++){
+        printf("index %d : %d \n", m, sub[m]);
+        if(min > sub[m]){
+            min = sub[m];
+        }
+    }
+
+    return min;
 }
 
 
@@ -100,19 +119,32 @@ int main(){
 //    int n;
 //    printf("Factorial Test : ");
 //    scanf("%d", &n);
-//
 //    int result = factorial2(n);
 //    printf("Result : %d", result);
-
+//
+//
 //    int a, b;
-//    printf("\nGreatest Common Divisor Test : ");
+//    printf("\n\nGreatest Common Divisor Test : ");
 //    scanf("%d %d", &a, &b);
 //    printf("Result : %d", gcd(a, b));
 
-//    int a[4] = {3, 12, 18, 21};
-//    printf("gcd array : %d", gcd_array(a, 4));
 
-    recur2(5);
+    puts("\n\nGCD array Test");
+    int num, i = 0;
+    printf("\nEnter the number of array elements : ");
+    scanf("%d", &num);
+    int arr[num];
+
+    do{
+        printf("Array Element at index %d : ", i);
+        scanf("%d", &arr[i++]);
+    }while(i < num);
+
+    printf("gcd array : %d", gcd_array(arr, num));
+
+
+//    puts("\n\nRecursion Test : ");
+//    recur2(5);
 
     return 0;
 }
