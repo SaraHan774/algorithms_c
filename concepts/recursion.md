@@ -39,3 +39,6 @@ y가 0이 아니면, gcd(y , x % y) 이다.
     * 배열에 계산 결과를 저장, 위로 올라가면서 배열의 값을 가져다 씀. 
 
 * [블로그 포스트: 꼬리 재귀 최적화(Tail Recursion)](https://bozeury.tistory.com/entry/%EA%BC%AC%EB%A6%AC-%EC%9E%AC%EA%B7%80-%EC%B5%9C%EC%A0%81%ED%99%94Tail-Recursion) 
+
+### 보충 
+* [로버트 세지윅 : Algorithms in C - ch5.Recursion](https://drive.google.com/file/d/1nFHnmzGAYL1uSIo1qcmZRTYul3N29xUb/view?usp=sharing)
