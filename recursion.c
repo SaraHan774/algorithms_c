@@ -41,10 +41,10 @@ int gcd(int x, int y){
     }
 
     if(x == y){
-    //Case 2 : if equal, return either x or y
+        //Case 2 : if equal, return either x or y
         return x;
     }
-    //Case 3 : x > y
+        //Case 3 : x > y
     else{
         int k = x % y;
         if(k == 0){
