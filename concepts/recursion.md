@@ -110,4 +110,61 @@ int eval(){
     * 따라서, 재귀 프로그램들은 이러한 자료 구조를 조작하는 데 자주 사용되는 함수들에 대한 자연스러운 구현들을 제공한다. 
 
 
+### Fibonacci Sequence - Recursion with memoization 
+
+```
+if n = 0, 1 
+    return n
+
+if Fn is in memory, return Fn 
+ 
+if n>1 
+    Fn =  F(n-1) + F(n-2)
+    save Fn in memory 
+    return Fn 
+```
+
+* 구현 (memoization) 
+
+```
+#include <stdio.h>
+#include <time.h>
+#define MAX_MEMO 100
+
+int memo[MAX_MEMO];
+
+int fibonacci(int N){
+    //base condition
+    if(N <= 1){
+        return N;
+    }
+
+    if(memo[N] != -1){
+        return memo[N];
+    }
+
+    memo[N] = fibonacci(N-1) + fibonacci(N-2);
+
+    return memo[N];
+}
+
+int main(){
+
+    int k;
+    for(k = 0; k < 100; k++){
+        memo[k] = -1;
+    }
+
+    clock_t start, end;
+
+    start = clock();
+    int result = fibonacci(40); //raw : 603ms
+    end = clock();
+    printf("Fibonacci Result : %d , Time : %ld", result, end - start);
+
+    return 0;
+}
+
+```
+
 

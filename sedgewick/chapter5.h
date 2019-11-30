@@ -33,8 +33,11 @@ int puzzle(int N){
 }
 
 
+static int count = 0;
 int gcd_recursive(int x, int y){
+    count++;
     if(y == 0){
+        printf("\nCount : %d", count);
         return x;
     }
     return gcd_recursive(y, x%y);

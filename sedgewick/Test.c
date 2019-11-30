@@ -19,5 +19,9 @@ int main(){
         printf("\npuzzle %d : %d ", i, puzzle(i));
     }
 
+    //recursive depth ?
+    puts("\n\ndepth ");
+    gcd_recursive(470, 234);
+
     return 0;
 }
