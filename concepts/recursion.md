@@ -40,5 +40,74 @@ y가 0이 아니면, gcd(y , x % y) 이다.
 
 * [블로그 포스트: 꼬리 재귀 최적화(Tail Recursion)](https://bozeury.tistory.com/entry/%EA%BC%AC%EB%A6%AC-%EC%9E%AC%EA%B7%80-%EC%B5%9C%EC%A0%81%ED%99%94Tail-Recursion) 
 
+
+---
+
 ### 보충 
 * [로버트 세지윅 : Algorithms in C - ch5.Recursion](https://drive.google.com/file/d/1nFHnmzGAYL1uSIo1qcmZRTYul3N29xUb/view?usp=sharing)
+
+## Recursion and Trees 
+
+* 재귀의 개념은 재귀적으로 정의된 구조인 Tree와 깊은 연관이 있다. 
+    * 재귀적으로 짜여진 프로그램을 이해하기 위해 트리를 사용하고, 
+    * 트리를 이해하기 위해 재귀를 사용한다. 
+    
+* 중요한 주제들 
+    * divide and conquer : fundamental recursive scheme 
+    * dynamic programming : general approach to implementing recursive programs 
+    * tree traversal : tree traversal methods underlie recursive tree-processing programs 
+    * depth first search : basis for many graph processing algorithms 
+
+* Recursion 을 이용한 프로그램은 언제나 non-recursive 하게 작성할 수 있다. 
+
+* Recursion 을 가능케 한 요인 
+    * built-in pushdown stack
+    * stack 이 가득 차면 안되므로 최초의 매개변수 N보다 작은 k가 넘어오는 것이 보장되어야. 
+        * 언젠가는 끝나야 하므로
+
+* Conditions (Factorial 예제에서) 
+    * "They must explicitly solve a basis case" 
+        * It computes 0! 
+    * "Each recursive call must involve smaller values of the arguments"
+        * Under the assumption that it computes k! for k<N (inductive hypothesis), it computes N!
+    
+
+    
+* Recursive program to evaluate prefix expressions 
+
+```
+char *a;
+int i;
+
+int eval(){
+    int x = 0;
+    while(a[i] == ' '){
+        i++;
+    }
+
+    if(a[i] == '+'){
+        i++;
+        return eval() + eval();
+    }
+
+    if(a[i] == '*'){
+        i++;
+        return eval() * eval();
+    }
+
+    while((a[i] >= '0') && (a[i] <= '9')){
+        x = 10 * x + (a[i++] - '0');
+        return x;
+    }
+}
+```
+
+* This program is a simple example of a _recursive descent parser_ 
+* We can use the same process to convert C programs into machine code. 
+
+
+* 노드와 포인터로 이루어진 자료 구조들은 내재적으로 재귀성을 띤다. 
+    * 따라서, 재귀 프로그램들은 이러한 자료 구조를 조작하는 데 자주 사용되는 함수들에 대한 자연스러운 구현들을 제공한다. 
+
+
+

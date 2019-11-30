@@ -13,3 +13,6 @@ add_executable(TwoWayStack TwoWayStack.c TwoWayStack.h TwoWayStackMain.c)
 add_executable(IntQueue IntQueue.c IntQueue.h IntQueueMain.c)
 add_executable(4c-1 4c-1.c)
 add_executable(recursion recursion.c)
+add_executable(recursion_prefix recursion_prefix.c)
+
+add_executable(algorithms sedgewick/Test.c sedgewick/chapter5.h)
