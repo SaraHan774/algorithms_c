@@ -20,3 +20,7 @@ add_executable(fibo fibo.c)
 
 add_executable(hanoi hanoi.c)
 add_executable(182_Q5 182_Q5.c)
+
+add_executable(sorting bubble_sort_naive.c)
+add_executable(bubble_sort_improved_1 bubble_sort_improved_1.c)
+add_executable(bubble_sort_improved_2 bubble_sort_improved_2.c)
