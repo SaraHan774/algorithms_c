@@ -17,3 +17,6 @@ add_executable(recursion_prefix recursion_prefix.c)
 
 add_executable(algorithms sedgewick/Test.c sedgewick/chapter5.h)
 add_executable(fibo fibo.c)
+
+add_executable(hanoi hanoi.c)
+add_executable(182_Q5 182_Q5.c)
