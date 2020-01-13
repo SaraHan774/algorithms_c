@@ -24,3 +24,6 @@ add_executable(182_Q5 182_Q5.c)
 add_executable(sorting bubble_sort_naive.c)
 add_executable(bubble_sort_improved_1 bubble_sort_improved_1.c)
 add_executable(bubble_sort_improved_2 bubble_sort_improved_2.c)
+
+add_executable(204_Q1 204_Q1.c)
+add_executable(204_Q2 204_Q2.c)
