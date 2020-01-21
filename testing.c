@@ -31,6 +31,6 @@ void generate_int(int num, char * fileName){
     fclose(file);
 }
 
-void read_int(char * fileName){
+void read_int(){
 
 }

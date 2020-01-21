@@ -32,8 +32,5 @@ add_executable(208_Q6 208_Q6.c)
 add_executable(insertion 214_inserton_sort.c)
 add_executable(216_Q10 216_Q10.c)
 
-add_executable(shell_sort shell_sort.c)
+add_executable(shell_sort shell_sort.c testing.c testing.h)
 add_executable(223_Q12 223_Q12.c)
-add_executable(generate_random_int_1000 generate_random_int_1000.c)
-
-add_executable(test testing.c testing.h)
