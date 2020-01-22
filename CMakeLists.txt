@@ -37,3 +37,5 @@ add_executable(223_Q12 223_Q12.c)
 
 add_executable(partition partition.c)
 add_executable(quick_sort quick_sort.c)
+
+add_executable(231_Q13 231_Q13.c)

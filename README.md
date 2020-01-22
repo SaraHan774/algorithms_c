@@ -14,16 +14,16 @@ C언어 자료구조&amp;알고리즘 연습문제 및 실습
 ### 6단원 정렬 알고리즘 
 
 - [X] Shell Sort (01.20 - 21)
-- [ ] Quick Sort 
-- [ ] Merge Sort 
+- [ ] Quick Sort (01.22 - 23) 
+- [ ] Merge Sort (01.24 - 25) 
 
 ### 7단원 집합   
-- [ ] 20.01
-  * 7-3 비트벡터로 집합 만들기 까지 
+- [ ] 1월 31일 전까지 
 
 ### 8단원 문자열 검색 
-- [ ] 20.01  
-  * 8단원 전체
+- [ ] 2월 중순
+
+### TBA ... 
   
 ---
  
@@ -36,3 +36,6 @@ C언어 자료구조&amp;알고리즘 연습문제 및 실습
 
 ### 1회독 이후 
 - [MIT OCW 알고리즘 강의 Python](https://www.edwith.org/introalgorithm/joinLectures/16685)
+
+### References 
+* [VisuAlgo : link](https://visualgo.net/ko)
