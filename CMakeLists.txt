@@ -34,3 +34,6 @@ add_executable(216_Q10 216_Q10.c)
 
 add_executable(shell_sort shell_sort.c testing.c testing.h)
 add_executable(223_Q12 223_Q12.c)
+
+add_executable(partition partition.c)
+add_executable(quick_sort quick_sort.c)
