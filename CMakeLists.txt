@@ -43,3 +43,5 @@ add_executable(quicksort_non_recursive quicksort_non_recursive.c)
 add_executable(using_qsort using_qsort.c)
 
 add_executable(using_qsort_struct using_qsort_struct.c)
+add_executable(246_Q19 246_Q19.c)
+add_executable(246_Q20 246_Q20.c)
