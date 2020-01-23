@@ -12,6 +12,14 @@ void quick(int a[], int left, int right){
     int pr = right;
     int pivot = a[(pl + pr)/2];
 
+    //배열의 분할 과정을 출력하는 프로그램
+    int i;
+    printf("a[%d] ~ a[%d] : {", left, right);
+    for(i = left; i < right; i++){
+        printf("%d  ", a[i]);
+    }
+    printf("%d}\n", a[right]);
+
     do{
         while(a[pl] < pivot){
             pl++;
@@ -62,7 +70,7 @@ int main(){
     quick_sort(a, n);
 
     for(int i = 0; i < n; i++){
-        printf("a[%d] : %d", i, a[i]);
+        printf("a[%d] : %d\n", i, a[i]);
     }
 
 
