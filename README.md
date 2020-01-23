@@ -14,7 +14,7 @@ C언어 자료구조&amp;알고리즘 연습문제 및 실습
 ### 6단원 정렬 알고리즘 
 
 - [X] Shell Sort (01.20 - 21)
-- [ ] Quick Sort (01.22 - 23) 
+- [X] Quick Sort (01.22 - 23) 
 - [ ] Merge Sort (01.24 - 25) 
 
 ### 7단원 집합   
@@ -39,3 +39,4 @@ C언어 자료구조&amp;알고리즘 연습문제 및 실습
 
 ### References 
 * [VisuAlgo : link](https://visualgo.net/ko)
+* [C언어 코딩도장](https://dojang.io/course/view.php?id=2)
