@@ -40,3 +40,4 @@ C언어 자료구조&amp;알고리즘 연습문제 및 실습
 ### References 
 * [VisuAlgo : link](https://visualgo.net/ko)
 * [C언어 코딩도장](https://dojang.io/course/view.php?id=2)
+* [SNU 민상렬 교수님 : 컴퓨터의 개념 및 실습](https://www.youtube.com/playlist?list=PLpDJrhQ7qbNHjCGC42CrtGq1FXMskBi3K)
