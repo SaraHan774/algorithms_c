@@ -47,3 +47,6 @@ add_executable(246_Q19 246_Q19.c)
 add_executable(246_Q20 246_Q20.c)
 add_executable(merge merge.c)
 add_executable(merge_sort merge_sort.c)
+
+add_executable(binary dojang.c)
+add_executable(minefield minefield.c)
