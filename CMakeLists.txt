@@ -50,3 +50,5 @@ add_executable(merge_sort merge_sort.c)
 
 add_executable(binary dojang.c)
 add_executable(minefield minefield.c)
+add_executable(merge_ary merge_ary.c)
+add_executable(merge_recap merge_recap.c)
