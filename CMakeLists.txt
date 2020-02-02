@@ -52,3 +52,8 @@ add_executable(binary dojang.c)
 add_executable(minefield minefield.c)
 add_executable(merge_ary merge_ary.c)
 add_executable(merge_recap merge_recap.c)
+
+add_executable(263_Q22 263_Q22.c)
+add_executable(heap_sort heap_sort.c)
+add_executable(SimpleHeap concepts/SimpleHeap.c concepts/SimpleHeap.h concepts/HeapMain.c)
+add_executable(frequency_sort frequency_sort.c)
