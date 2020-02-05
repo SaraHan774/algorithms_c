@@ -58,3 +58,6 @@ add_executable(heap_sort heap_sort.c)
 add_executable(SimpleHeap concepts/SimpleHeap.c concepts/SimpleHeap.h concepts/HeapMain.c)
 add_executable(frequency_sort frequency_sort.c)
 add_executable(sort_three_numbers sort_three_numbers.c)
+
+
+add_executable(IntSet IntSet.c IntSet.h)
