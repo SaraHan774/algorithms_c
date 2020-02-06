@@ -61,3 +61,6 @@ add_executable(sort_three_numbers sort_three_numbers.c)
 
 
 add_executable(IntSet IntSet.c IntSet.h)
+add_executable(string_dump string_dump.c)
+add_executable(string_array string_array.c)
+add_executable(swap_string_ptr swap_string_ptr.c)
