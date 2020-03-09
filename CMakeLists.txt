@@ -67,3 +67,6 @@ add_executable(swap_string_ptr swap_string_ptr.c)
 
 add_executable(1181_sort_string 1181_sort_string.c)
 add_executable(1181_sort_string_2 1181_sort_string_2.c)
+add_executable(14889_start_and_link 14889_start_and_link.c)
+
+add_executable(reverse_linked_list singly_linked_list.c)
