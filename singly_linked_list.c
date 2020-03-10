@@ -132,6 +132,24 @@ void print_list(linked_list_t * list){
 
 void reverse_list(linked_list_t * list){
 
+    node_t * prev = list -> head; //prev 는 첫번째 노드를 가리킴
+    list -> head = list -> head -> next_node; //head 를 한 칸 옮긴다
+    node_t * cur = list -> head; //cur 를 한 칸 옮긴 head 를 가리키도록 한다.
+
+    prev -> next_node = NULL; //prev 의 next 를 NULL 로 설정한다.
+
+    while(list -> head != NULL){
+        list -> head = list -> head -> next_node; //head 를 한 칸 옮기고
+        cur -> next_node = prev; //현재 노드를 disconnect 한 후에
+
+        //prev 와 cur 를 한 칸 씩 옮긴다.
+        prev = cur;
+        cur = list -> head;
+        //이 과정을 head 가 NULL 이 아닐 때 까지 반복한다.
+    }
+
+    //prev 가 가장 뒤의 노드가 되어 있을 것이고, head 를 prev 로 재설정한다.
+   list -> head = prev;
 }
 
 void free_list(linked_list_t * list){
@@ -147,7 +165,7 @@ int main(){
     int user_input;
     int data;
     while(true){
-        printf("\nMENU : \n 0 : insert node\n 1 : delete node\n 2: print list\n 3 : end program\n");
+        printf("\n=== MENU === \n0 : insert node 1 : delete node 2: print list 3 : reverse list 4 : end program\n");
         printf("Enter Menu Number : ");
         scanf("%d", &user_input);
 
@@ -172,7 +190,10 @@ int main(){
                 printf("\nprinting list ... \n");
                 print_list(list);
                 break;
-            case 3:
+            case 3 :
+                reverse_list(list);
+                break;
+            case 4 :
                 free_list(list);
                 exit(0);
         }
