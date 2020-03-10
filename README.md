@@ -1,6 +1,8 @@
 # Algorithms in C
 C언어 자료구조&amp;알고리즘 연습문제 및 실습
 
+## 2019.11 ~ 2020.02
+
 ### 1단원 ~ 5단원 
 - [X] 19.11.30  
   * ~177페이지 
@@ -36,9 +38,9 @@ C언어 자료구조&amp;알고리즘 연습문제 및 실습
 - [ ] 9-3 커서로 연결 리스트 만들기 
 - [ ] 9-4 원형 이중 연결 리스트
 
-### 10단원 트리 (02.22 - 29)
+### 10단원 트리
 
-### 11단원 해시 (03.01 - 07)
+### 11단원 해시 
 
 ### 1회독 이후 
 - [MIT OCW 알고리즘 강의 Python](https://www.edwith.org/introalgorithm/joinLectures/16685)
@@ -48,3 +50,12 @@ C언어 자료구조&amp;알고리즘 연습문제 및 실습
 * [C언어 코딩도장](https://dojang.io/course/view.php?id=2)
 * [SNU 민상렬 교수님 : 컴퓨터의 개념 및 실습](https://www.youtube.com/playlist?list=PLpDJrhQ7qbNHjCGC42CrtGq1FXMskBi3K)
 * [백준 알고리즘 단계별 풀이](https://www.acmicpc.net/step)
+
+
+## 2020.03 ~ 
+**`Introduction to Algorithms` 책으로 학습 중, 주로 Java 코드로 작성하는 중임.**
+- 2020.03 첫 주 : 소단원 1 ~ 12 까지 (Hashing 까지 학습함)
+
+### 구현 과제 
+* [10.2-7 Singly Linked List reverse 하기](./singly_linked_list.c)
+
