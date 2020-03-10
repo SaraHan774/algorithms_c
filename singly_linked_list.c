@@ -137,6 +137,7 @@ void reverse_list(linked_list_t * list){
     node_t * cur = list -> head; //cur 를 한 칸 옮긴 head 를 가리키도록 한다.
 
     prev -> next_node = NULL; //prev 의 next 를 NULL 로 설정한다.
+    list -> tail = prev; //원래의 tail 을 prev 로 재지정 한다.
 
     while(list -> head != NULL){
         list -> head = list -> head -> next_node; //head 를 한 칸 옮기고
